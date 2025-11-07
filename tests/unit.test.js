@@ -58,7 +58,7 @@ describe('Yale to Fale replacement logic', () => {
       </head>
       <body>
         <h1>Hello World</h1>
-        <p>This is a test page with no Fale references.</p>
+        <p>This is a test page with no Yale references.</p>
       </body>
       </html>
     `;
@@ -104,5 +104,10 @@ describe('Yale to Fale replacement logic', () => {
     const modifiedHtml = $.html();
     
     expect(modifiedHtml).toContain('FALE University, Fale College, and fale medical school');
+  });
+
+  // TEMPORARY: This test will fail to verify CI blocks deployment
+  test('TEMP: This test should fail', () => {
+    expect(true).toBe(false);
   });
 });
