@@ -106,4 +106,9 @@ describe('Yale to Fale replacement logic', () => {
     expect(modifiedHtml).toContain('FALE University, Fale College, and fale medical school');
   });
 
+  // TEMPORARY: This test will fail to verify CI blocks deployment
+  test('TEMP: This test should fail', () => {
+    expect(true).toBe(false);
+  });
+
 });
