@@ -2,9 +2,9 @@ name: Faleproxy CI & Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, fixing_ci ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, fixing_ci ]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
