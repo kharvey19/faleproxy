@@ -2,9 +2,9 @@ name: Faleproxy CI & Deploy
 
 on:
   push:
-    branches: [ main, master, fixing_ci ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main, master, fixing_ci ]
+    branches: [ main, master ]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -43,7 +43,7 @@ jobs:
 
   deploy:
     needs: test
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/fixing_ci'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     
     steps:
