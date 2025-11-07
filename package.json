@@ -4,8 +4,8 @@
   "description": "A proxy that replaces 'Yale' with 'Fale' in web content",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "vercel-build": "echo 'Building for Vercel deployment'",
     "test": "jest",
     "test:watch": "jest --watch",
